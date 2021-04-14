@@ -7,3 +7,7 @@
 # Hint: Use the `rand` method for the dice roll.
 
 p "Enter a guess:"
+
+
+user_string = gets.chomp
+words = user_string.split

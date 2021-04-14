@@ -9,3 +9,15 @@
 # If no name is given, the result should be "One for you, one for me."
 
 p "Enter a name:"
+
+
+user_string = gets.chomp
+words = user_string.split
+
+#p words.length
+
+if(words.length==1)
+  p "One for " + words[0].to_s.capitalize + ", one for me!"
+elsif 
+  p "One for you, one for me!"
+end
