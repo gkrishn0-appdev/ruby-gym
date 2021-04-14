@@ -11,3 +11,13 @@ p "Enter a guess:"
 
 user_string = gets.chomp
 words = user_string.split
+
+num=rand(1..6)
+p num
+
+if (num.to_s==user_string)
+  p "You guessed correctly"
+elsif
+  p "Shame on you. The die landed on " + num.to_s
+end
+

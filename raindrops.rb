@@ -37,3 +37,27 @@
 
 
 p "Enter an integer"
+
+user_string = gets.chomp
+words = user_string.split
+num=user_string.to_i
+
+threeFactor=num%3==0
+fiveFactor=num%5==0
+sevenFactor=num%7==0
+
+if (!threeFactor && !fiveFactor && !sevenFactor)
+  p num
+end
+if (threeFactor)
+  print "Pling"
+end
+if (fiveFactor)
+  print "Plang"
+end
+if (sevenFactor)
+  print "Plong"
+end
+
+
+

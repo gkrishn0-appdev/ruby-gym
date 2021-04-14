@@ -14,3 +14,15 @@
 #   5. The year is not a leap year (it has 365 days).
 
 p "Enter a year:"
+
+user_string = gets.chomp
+words = user_string.split
+
+year=user_string.to_i
+p year%4
+if (year%4==0 && year%100!=0)
+  p year.to_s + " is a leap year!"
+else
+  p year.to_s + " is not a leap year"
+end
+

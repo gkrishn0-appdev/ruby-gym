@@ -11,3 +11,18 @@
 # 16
 
 p "Enter at least 2 numbers, separated by spaces:"
+
+user_string = gets.chomp
+words = user_string.split
+
+len=words.length
+count=0
+sum=0
+while (count<len)
+  a=words[count]
+  if (a.to_i.odd?)
+    sum=sum+a.to_i
+  end
+  count=count+1
+end
+p sum
